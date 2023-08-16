@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Chicle&family=Heebo:wght@700;800;900&family=Poppins:wght@600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: yellow;
+}
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoImg{
+    width: 150px;
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logoImg.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.logoImg.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: url("imagens/background-main.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.logo{
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    margin: 0 auto;
+}
+
+
+.logo header img{
+    display: block;
+    margin: 0 auto;
+}
+
+.balloonContainer{
+    background: url("imagens/bg-container.avif");
+    background-size: cover;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+    height: 400px;
+    border: 2px solid #ddddcd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #393910;
+}
+
+.balloonContainer img{
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    width: 160px;
+    transform: rotate(60deg);
+}
+
+button{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #c50000;
+    box-shadow: 0 0 0 10px #ffffff, inset 0 0 15px #000000;
+    color: white;
+    font-size: 20px;
+    font-family: 'Heebo', cursive;
+}
+
+button:active{
+    background: #8f0303;
+    box-shadow: 0 0 0 10px #ffffff, inset 0 0 15px #000000;
+}
+
+button:disabled{
+    background: grey;
+}
+
+.time01{
+    font-size: 50px;
+    position: relative;
+    top: 38%;
+    left: 41%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-family: 'Chicle', cursive;
+}
+
+.contContainer{
+    font-family: 'Poppins', cursive;
+    font-size: 23px;
+}
+
+.contadorContainer{
+    background: linear-gradient(160deg, #3086b9, #c1c7d3);
+    color: #ffffff;
+    width: 80%;
+    display: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    top: 35%;
+    border: 1px solid #ddddcd;
+    box-shadow: 0 0 10px #393910;
+}
+.balloon.active{
+    scale: 110%;
+}
+
+.balloon.active02{
+    scale: 120%;
+}
+
+.balloon.active03{
+    scale: 130%;
+}
+
+.balloon.active04{
+    scale: 140%;
+}
+
+.balloon.active05{
+    scale: 150%;
+}
